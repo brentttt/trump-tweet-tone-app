@@ -1,0 +1,26 @@
+$pos: 30px;
+$arrow-color: #9455c6;
+
+.arrow {
+  cursor: pointer;
+  fill: $arrow-color;
+  position: fixed;
+  top: calc(50% - 25px);
+
+  &:hover {
+    fill: lighten($arrow-color, 10%);
+  }
+
+  &--disabled {
+    fill: $medium-grey !important;
+  }
+
+}
+
+.right-arrow {
+  right: $pos;
+}
+
+.left-arrow {
+  left: $pos;
+}

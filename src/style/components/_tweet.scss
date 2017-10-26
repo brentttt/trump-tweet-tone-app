@@ -1,0 +1,111 @@
+.tweet {
+  margin: 50px auto;
+  max-width: 963px;
+}
+
+.tweet__text {
+  color: $light-grey;
+  font-size: 40px;
+  font-style: italic;
+  line-height: 50px;
+
+  margin-bottom: 50px;
+
+  span {
+    // border-bottom: 2px solid orangered;
+    color: orangered;
+  }
+}
+
+.tweet__charts {
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+  justify-content: space-between;
+}
+
+.tweet__charts__section {
+  display: flex;
+  flex-direction: row;
+  min-width: 100px;
+  height: 100%;
+}
+
+.emotion_tone__type {
+  background: darkslateblue;
+  margin-right: 1px;
+  margin-top: auto;
+  position: relative;
+  width: 60px;
+}
+
+.emotion_tone__type__text {
+  bottom: -70px;
+  color: #6fa19f;
+  font-family: 'Overpass Mono';
+  font-size: .8em;
+  left: 20%;
+  position: absolute;
+  text-transform: uppercase;
+  transform: rotate(40deg);
+  width: 150px;
+}
+
+//tone-colors
+
+// EMOTIONAL
+// .anger {
+//   background: red;
+// }
+//
+// .disgust {
+//   background: green;
+// }
+//
+// .fear {
+//   background: pink;
+// }
+//
+// .joy {
+//   background: yellow;
+// }
+//
+// .sadness {
+//   background: blue;
+// }
+//
+// // LANGUAGE
+//
+// .analytical {
+//   background: red;
+// }
+//
+// .confident {
+//   background: green;
+// }
+//
+// .tentative {
+//   background: pink;
+// }
+//
+// // SOCIAL
+//
+// .openness {
+//   background: red;
+// }
+//
+// .conscientiousness {
+//   background: green;
+// }
+//
+// .extraversion {
+//   background: pink;
+// }
+//
+// .agreeableness {
+//   background: yellow;
+// }
+//
+// .emotional_range {
+//   background: blue;
+// }
