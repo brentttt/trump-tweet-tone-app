@@ -16,6 +16,10 @@ const Tweet = mongoose.model('Tweet', {
   tone: {
     type: String,
     required: true
+  },
+  count: {
+    type: Number,
+    required: true
   }
 });
 

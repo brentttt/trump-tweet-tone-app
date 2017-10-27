@@ -1,6 +1,9 @@
 const OAuth = require('oauth');
 
 const requestTweets = new Promise((resolve, reject) => {
+
+  const count = 10;
+
   const oauth = new OAuth.OAuth(
     'https://api.twitter.com/oauth/request_token',
     'https://api.twitter.com/oauth/access_token',
@@ -11,7 +14,7 @@ const requestTweets = new Promise((resolve, reject) => {
     'HMAC-SHA1'
   );
   const data = oauth.get(
-    'https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=realdonaldtrump&count=1',
+    'https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=realdonaldtrump&count=' + count,
     '892485628004380672-OWWKtK8A4fBs3RL29aDC9zovneqG5WV', //user token
     'KjmN6BpRtweXtrE7YpweKpx9Dcf99aaCNND7BYvZDimCm', //user secret
     function (e, data, res){
