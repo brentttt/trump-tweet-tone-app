@@ -9,6 +9,8 @@ import Tweet from './Tweet';
 import Arrows from './Arrows';
 import ListView from './ListView';
 
+const api = 'https://trump-tweet-tone-api.herokuapp.com/'
+
 class TrumpTweetTracker extends Component {
   constructor(props) {
     super(props);
@@ -21,7 +23,7 @@ class TrumpTweetTracker extends Component {
     this.setState((prevState) => ({
       currentTweet: prevState.prevTweet,
     }), () => {
-      axios.get(`http://localhost:3000/tweets/i/` + (this.state.currentTweet.count + 1))
+      axios.get(api + `tweets/i/` + (this.state.currentTweet.count + 1))
       .then(res => {
           this.setState(() => ({
             nextTweet: res.data.tweet
@@ -34,7 +36,7 @@ class TrumpTweetTracker extends Component {
         }
       });
 
-      axios.get(`http://localhost:3000/tweets/i/` + (this.state.currentTweet.count - 1))
+      axios.get(api + `tweets/i/` + (this.state.currentTweet.count - 1))
       .then(res => {
           this.setState(() => ({
             prevTweet: res.data.tweet
@@ -52,7 +54,7 @@ class TrumpTweetTracker extends Component {
     this.setState((prevState) => ({
       currentTweet: prevState.nextTweet,
     }), () => {
-      axios.get(`http://localhost:3000/tweets/i/` + (this.state.currentTweet.count + 1))
+      axios.get(api + `tweets/i/` + (this.state.currentTweet.count + 1))
       .then(res => {
           this.setState(() => ({
             nextTweet: res.data.tweet
@@ -64,7 +66,7 @@ class TrumpTweetTracker extends Component {
           }));
         }      });
 
-      axios.get(`http://localhost:3000/tweets/i/` + (this.state.currentTweet.count - 1))
+      axios.get(api + `tweets/i/` + (this.state.currentTweet.count - 1))
       .then(res => {
           this.setState(() => ({
             prevTweet: res.data.tweet
@@ -86,12 +88,12 @@ class TrumpTweetTracker extends Component {
       id = this.props.location.pathname.substring(1);
     }
     if(id) {
-      axios.get(`http://localhost:3000/tweets/id/` + id)
+      axios.get(api + `tweets/id/` + id)
       .then(res => {
         this.setState(() => ({
           currentTweet: res.data.tweet
         }), () => {
-          axios.get(`http://localhost:3000/tweets/i/` + (this.state.currentTweet.count + 1))
+          axios.get(api + `tweets/i/` + (this.state.currentTweet.count + 1))
           .then(res => {
               this.setState(() => ({
                 nextTweet: res.data.tweet
@@ -103,7 +105,7 @@ class TrumpTweetTracker extends Component {
               }));
             }      });
 
-          axios.get(`http://localhost:3000/tweets/i/` + (this.state.currentTweet.count - 1))
+          axios.get(api + `tweets/i/` + (this.state.currentTweet.count - 1))
           .then(res => {
               this.setState(() => ({
                 prevTweet: res.data.tweet
@@ -146,7 +148,7 @@ class TrumpTweetTracker extends Component {
         this.handleGetTweetById();
       })
     } else {
-      axios.get(`http://localhost:3000/tweets/latest`)
+      axios.get(api + `tweets/latest`)
       .then(res => {
         this.setState(() => ({
           currentTweet: res.data.currentTweet,
