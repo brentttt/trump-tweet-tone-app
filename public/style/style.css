@@ -1,0 +1,91 @@
+body {
+  background: #fcfcfc;
+  font-family: Roboto; }
+
+.header {
+  box-sizing: border-box;
+  padding: 8px; }
+
+.header__title {
+  font-size: 1.6em;
+  margin: 0;
+  text-align: center; }
+
+.tweet {
+  margin: 50px auto;
+  max-width: 963px; }
+
+.tweet__text {
+  color: #fcfcfc;
+  margin-bottom: 30px;
+  min-height: 200px; }
+  .tweet__text .tweet__text__content {
+    color: orangered;
+    font-size: 40px;
+    font-style: italic;
+    line-height: 50px; }
+  .tweet__text .tweet__text__datetime {
+    color: #ccc;
+    display: block; }
+
+.tweet__charts {
+  display: flex;
+  flex-direction: row;
+  height: 250px;
+  justify-content: space-between; }
+
+.tweet__charts__section {
+  display: flex;
+  flex-direction: row;
+  min-width: 100px;
+  height: 100%;
+  position: relative; }
+
+.tweet__charts__section__name {
+  color: darkslateblue;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: -20px;
+  width: 100%; }
+
+.emotion_tone__type {
+  background: darkslateblue;
+  margin-right: 1px;
+  margin-top: auto;
+  min-height: 2px;
+  position: relative;
+  transition: height .5s;
+  width: 60px; }
+
+.emotion_tone__type__text {
+  bottom: -70px;
+  color: #6fa19f;
+  font-family: 'Overpass Mono';
+  font-size: .8em;
+  left: 20%;
+  position: absolute;
+  text-transform: uppercase;
+  transform: rotate(40deg);
+  width: 150px; }
+
+.arrow {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  fill: #9455c6;
+  position: fixed;
+  top: calc(50% - 25px); }
+  .arrow:hover {
+    fill: #ac7bd3; }
+  .arrow:disabled {
+    cursor: default;
+    fill: #ccc !important; }
+  .arrow:focus {
+    outline: 0; }
+
+.right-arrow {
+  right: 30px; }
+
+.left-arrow {
+  left: 30px; }
