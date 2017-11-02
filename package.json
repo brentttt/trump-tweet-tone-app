@@ -27,7 +27,8 @@
   },
   "scripts": {
     "start": "node server/server.js",
-    "build": "webpack --colors --watch",
+    "buildwatch": "webpack --colors --watch",
+    "build": "webpack",
     "dev-server": "webpack-dev-server"
   },
   "devDependencies": {
