@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import datetime from 'node-datetime';
 
+import { api } from './settings';
+
 import ListRemoveButton from './ListRemoveButton';
 
 export default class ListView extends Component {
@@ -13,7 +15,7 @@ export default class ListView extends Component {
     }
   }
   componentWillMount() {
-      axios.get(`http://localhost:3000/tweets/all`)
+      axios.get(api + `tweets/all`)
             .then(res => {
               this.setState(() => ({
                 list: res.data.list.reverse()

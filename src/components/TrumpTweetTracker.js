@@ -9,7 +9,7 @@ import Tweet from './Tweet';
 import Arrows from './Arrows';
 import ListView from './ListView';
 
-const api = 'https://trump-tweet-tone-api.herokuapp.com/'
+import { api } from './settings';
 
 class TrumpTweetTracker extends Component {
   constructor(props) {

@@ -12,7 +12,7 @@ $arrow-color: $medium-purple;
   transition: filter .2s;
 
   &:hover {
-    filter: drop-shadow(0 0 8px darken($arrow-color, 30%));
+    filter: drop-shadow(0 0 8px orange);
   }
 
   &:active {

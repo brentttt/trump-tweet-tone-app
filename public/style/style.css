@@ -151,7 +151,7 @@ button {
   top: calc(50% - 25px);
   transition: filter .2s; }
   .arrow:hover {
-    filter: drop-shadow(0 0 8px #441876); }
+    filter: drop-shadow(0 0 8px orange); }
   .arrow:active {
     fill: #aa76e4; }
   .arrow:disabled {
