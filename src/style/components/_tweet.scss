@@ -1,5 +1,5 @@
 .tweet {
-  margin: 120px auto;
+  margin: 100px auto;
   max-width: 963px;
   padding: 0 60px;
 }
@@ -8,6 +8,15 @@
   .tweet {
     margin: 80px auto 100px auto;
     padding: 20px;
+    padding-bottom: 100px;
+  }
+
+}
+
+// fixes bottom chart getting cut off on mobile
+@media all and (max-width: 600px) {
+  .tweet__charts__section:last-child {
+    margin-bottom: 180px;
   }
 }
 

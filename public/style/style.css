@@ -61,14 +61,19 @@ button {
     display: none; } }
 
 .tweet {
-  margin: 120px auto;
+  margin: 100px auto;
   max-width: 963px;
   padding: 0 60px; }
 
 @media all and (max-width: 600px) {
   .tweet {
     margin: 80px auto 100px auto;
-    padding: 20px; } }
+    padding: 20px;
+    padding-bottom: 100px; } }
+
+@media all and (max-width: 600px) {
+  .tweet__charts__section:last-child {
+    margin-bottom: 180px; } }
 
 .tweet__text {
   color: #f9f9f9;
