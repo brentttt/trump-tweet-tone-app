@@ -61,7 +61,7 @@ button {
     display: none; } }
 
 .tweet {
-  margin: 100px auto;
+  margin: 120px auto;
   max-width: 963px;
   padding: 0 60px; }
 
@@ -250,9 +250,10 @@ button {
     padding-top: 8px;
     top: auto;
     width: 50vw; }
-    .arrow:active {
-      background: #3d42a1;
+    .arrow:hover {
       filter: none; }
+    .arrow:active {
+      background: #3d42a1; }
     .arrow:disabled {
       display: none; }
   .only-arrow {
