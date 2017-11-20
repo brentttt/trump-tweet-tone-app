@@ -6,6 +6,7 @@
 
 @media all and (max-width: 600px) {
   .tweet {
+    margin-top: 80px;
     padding: 20px;
   }
 }
@@ -86,9 +87,15 @@
   }
 }
 
-
 @media all and (max-width: 600px) {
   .tweet__charts {
+    width: 100%;
+  }
+  .tweet__charts__section {
+    background: linear-gradient(to top, $light-grey, $light-grey, rgba(255, 255, 255, 0));
+    margin: 0;
+    margin-bottom: 120px;
+    padding: 0;
     width: 100%;
   }
 }
@@ -155,6 +162,17 @@
   text-transform: uppercase;
   transform: rotate(40deg);
   width: 150px;
+}
+
+@media all and (max-width: 600px) {
+  .emotion_tone__type__text {
+    bottom: auto;
+    top: -90px;
+    left: -44px;
+    // mix-blend-mode: screen;
+    text-align: right;
+    transform: rotate(90deg);
+  }
 }
 
 // tweet not found
