@@ -31,6 +31,12 @@ button {
     font-size: .7em;
     margin: 5px 0; }
 
+@media all and (max-width: 800px) {
+  .header {
+    padding-bottom: 20px; }
+  p {
+    display: none; } }
+
 .header__title {
   color: #2F337C;
   font-size: 1.6em;
@@ -45,9 +51,14 @@ button {
   .latest-button a {
     color: #8F4CDB; }
 
+@media all and (max-width: 800px) {
+  .latest-button {
+    display: none; } }
+
 .tweet {
   margin: 100px auto;
-  max-width: 963px; }
+  max-width: 963px;
+  padding: 0 60px; }
 
 .tweet__text {
   color: #f9f9f9;
@@ -62,13 +73,18 @@ button {
     color: #ccc;
     display: block; }
 
+@media all and (max-width: 800px) {
+  .tweet__text .tweet__text__content {
+    font-size: 32px;
+    line-height: 40px; } }
+
 .tweet__charts {
   border-bottom: 1px dashed #6fa19f;
   border-top: 1px dashed #6fa19f;
   display: flex;
   flex-direction: row;
   height: 250px;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 20px; }
 
 .tweet__charts__section {
@@ -82,6 +98,24 @@ button {
     background: #f9f9f9; }
     .tweet__charts__section:hover .tweet__charts__section__name {
       background: #f9f9f9; }
+
+@media all and (max-width: 800px) {
+  .tweet__charts {
+    border: none;
+    display: block;
+    padding: 0;
+    text-align: center;
+    width: 500px; }
+  .tweet__charts__section {
+    background: #f9f9f9;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: initial;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    padding: 0 90px;
+    width: calc(100vw - 120px); } }
 
 .tweet__charts__section__name {
   color: #2F337C;
@@ -121,6 +155,10 @@ button {
   transition: height .5s;
   width: 60px; }
 
+@media all and (max-width: 800px) {
+  .emotion_tone__type {
+    text-align: left; } }
+
 .emotion_tone__type__text {
   bottom: -65px;
   color: #7AA394;
@@ -149,7 +187,8 @@ button {
   filter: drop-shadow(0);
   position: fixed;
   top: calc(50% - 25px);
-  transition: filter .2s; }
+  transition: filter .2s;
+  z-index: 100; }
   .arrow:hover {
     filter: drop-shadow(0 0 8px orange); }
   .arrow:active {
@@ -168,6 +207,12 @@ button {
 .left-arrow {
   left: 30px; }
 
+@media all and (max-width: 800px) {
+  .right-arrow {
+    right: 5px; }
+  .left-arrow {
+    left: 5px; } }
+
 .list-button {
   background: transparent;
   border: none;
@@ -184,6 +229,10 @@ button {
     outline: 0; }
   .list-button:active {
     fill: #aa76e4; }
+
+@media all and (max-width: 800px) {
+  .list-button {
+    top: 22px; } }
 
 .list-view {
   background: #2F337C;
