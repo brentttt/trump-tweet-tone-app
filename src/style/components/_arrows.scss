@@ -65,7 +65,7 @@ $arrow-color: $medium-purple;
     top: auto;
     width: 50vw;
 
-    &:hover {
+    &:active {
       background: lighten($dark-purple, 10%);
       filter: none;
     }

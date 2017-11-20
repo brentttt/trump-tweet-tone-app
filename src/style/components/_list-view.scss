@@ -22,6 +22,10 @@ $list-view-background: $dark-purple;
     box-sizing: border-box;
     padding: 30px;
   }
+
+  p {
+    line-height: 1.5em;
+  }
 }
 
 .list-view__remove {
