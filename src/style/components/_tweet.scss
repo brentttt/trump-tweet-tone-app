@@ -1,6 +1,7 @@
 .tweet {
   margin: 100px auto;
   max-width: 963px;
+  padding: 0 60px;
 }
 
 .tweet__text {
@@ -22,13 +23,22 @@
   }
 }
 
+@media all and (max-width: 800px) {
+  .tweet__text {
+    .tweet__text__content {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+}
+
 .tweet__charts {
   border-bottom: 1px dashed #6fa19f;
   border-top: 1px dashed #6fa19f;
   display: flex;
   flex-direction: row;
   height: 250px;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 20px;
 }
 
@@ -46,6 +56,27 @@
     .tweet__charts__section__name {
       background: $light-grey;
     }
+  }
+}
+
+@media all and (max-width: 800px) {
+  .tweet__charts {
+    border: none;
+    display: block;
+    padding: 0;
+    text-align: center;
+    width: 500px;
+  }
+  .tweet__charts__section {
+    background: $light-grey;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: initial;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    padding: 0 90px;
+    width: calc(100vw - 120px);
   }
 }
 
@@ -92,6 +123,13 @@
   position: relative;
   transition: height .5s;
   width: 60px;
+}
+
+@media all and (max-width: 800px) {
+
+  .emotion_tone__type {
+    text-align: left;
+  }
 }
 
 .emotion_tone__type__text {

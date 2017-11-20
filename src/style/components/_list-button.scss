@@ -21,3 +21,9 @@
     fill: lighten($arrow-color, 10%);
   }
 }
+
+@media all and (max-width: 800px) {
+  .list-button {
+    top: 22px;
+  }
+}

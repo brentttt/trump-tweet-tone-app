@@ -21,6 +21,16 @@
   }
 }
 
+@media all and (max-width: 800px) {
+  .header {
+    padding-bottom: 20px;
+  }
+  p {
+    display: none;
+  }
+}
+
+
 .header__title {
   color: $dark-purple;
   font-size: 1.6em;
@@ -37,5 +47,11 @@
 
   a{
     color: $medium-purple;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .latest-button {
+    display: none;
   }
 }

@@ -1,5 +1,7 @@
 $pos: 30px;
+$pos-smallscreen: 5px;
 $arrow-color: $medium-purple;
+
 
 .arrow {
   background: transparent;
@@ -10,6 +12,7 @@ $arrow-color: $medium-purple;
   position: fixed;
   top: calc(50% - 25px);
   transition: filter .2s;
+  z-index: 100;
 
   &:hover {
     filter: drop-shadow(0 0 8px orange);
@@ -40,4 +43,14 @@ $arrow-color: $medium-purple;
 
 .left-arrow {
   left: $pos;
+}
+
+@media all and (max-width: 800px) {
+  .right-arrow {
+    right: $pos-smallscreen;
+  }
+
+  .left-arrow {
+    left: $pos-smallscreen;
+  }
 }
