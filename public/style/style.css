@@ -34,8 +34,8 @@ button {
 @media all and (max-width: 800px) {
   .header {
     padding-bottom: 20px; }
-  p {
-    display: none; } }
+    .header p {
+      display: none; } }
 
 @media all and (max-width: 600px) {
   .header {
@@ -67,7 +67,7 @@ button {
 
 @media all and (max-width: 600px) {
   .tweet {
-    margin-top: 80px;
+    margin: 80px auto 100px auto;
     padding: 20px; } }
 
 .tweet__text {
@@ -250,7 +250,7 @@ button {
     padding-top: 8px;
     top: auto;
     width: 50vw; }
-    .arrow:hover {
+    .arrow:active {
       background: #3d42a1;
       filter: none; }
     .arrow:disabled {
@@ -304,6 +304,8 @@ button {
     border-bottom: 1px solid white;
     box-sizing: border-box;
     padding: 30px; }
+  .list-view p {
+    line-height: 1.5em; }
 
 .list-view__remove {
   cursor: pointer;
