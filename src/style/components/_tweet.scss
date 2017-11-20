@@ -4,6 +4,12 @@
   padding: 0 60px;
 }
 
+@media all and (max-width: 600px) {
+  .tweet {
+    padding: 20px;
+  }
+}
+
 .tweet__text {
   color: $light-grey;
   margin-bottom: 50px;
@@ -77,6 +83,13 @@
     margin-bottom: 120px;
     padding: 0 90px;
     width: calc(100vw - 120px);
+  }
+}
+
+
+@media all and (max-width: 600px) {
+  .tweet__charts {
+    width: 100%;
   }
 }
 

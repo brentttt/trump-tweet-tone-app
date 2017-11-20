@@ -9,10 +9,12 @@ const Arrows = (props) => (
       updateHash={props.updateHash}
       handlePrevTweet={props.handlePrevTweet}
       prevTweet={props.prevTweet}
+      nextTweet={props.nextTweet}
     />
     <RightArrow
       updateHash={props.updateHash}
       handleNextTweet={props.handleNextTweet}
+      prevTweet={props.prevTweet}
       nextTweet={props.nextTweet}
     />
   </div>

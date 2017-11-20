@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom';
 
 const LeftArrow = withRouter(({history, ...props}) => (
   <button
-    className="arrow left-arrow"
+    className={"arrow left-arrow" + (!props.nextTweet ? " only-arrow" : "")}
     onClick={() => {
       const url = props.prevTweet.id;
       props.updateHash(url);

@@ -54,3 +54,35 @@ $arrow-color: $medium-purple;
     left: $pos-smallscreen;
   }
 }
+
+@media all and (max-width: 600px) {
+  .arrow {
+    background: $dark-purple;
+    bottom: 0;
+    fill: white;
+    height: 60px;
+    padding-top: 8px;
+    top: auto;
+    width: 50vw;
+
+    &:hover {
+      background: lighten($dark-purple, 10%);
+      filter: none;
+    }
+    &:disabled {
+      display: none;
+      // background: $medium-grey;
+      // fill: $dark-grey !important;
+    }
+  }
+  .only-arrow {
+    width: 100%;
+  }
+  .right-arrow {
+    right: 0;
+  }
+
+  .left-arrow {
+    left: 0;
+  }
+}

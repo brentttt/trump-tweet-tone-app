@@ -30,6 +30,13 @@
   }
 }
 
+@media all and (max-width: 600px) {
+  .header {
+    padding-left: 20px;
+    text-align: left;
+  }
+}
+
 
 .header__title {
   color: $dark-purple;

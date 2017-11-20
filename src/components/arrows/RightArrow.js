@@ -2,7 +2,7 @@ import React from 'react';
 
 const RightArrow = (props) => (
   <button
-    className="arrow right-arrow"
+    className={"arrow right-arrow" + (!props.prevTweet ? " only-arrow" : "")}
     onClick={() => {
       const url = props.nextTweet.id;
       props.updateHash(url);

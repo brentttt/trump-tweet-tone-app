@@ -37,6 +37,11 @@ button {
   p {
     display: none; } }
 
+@media all and (max-width: 600px) {
+  .header {
+    padding-left: 20px;
+    text-align: left; } }
+
 .header__title {
   color: #2F337C;
   font-size: 1.6em;
@@ -59,6 +64,10 @@ button {
   margin: 100px auto;
   max-width: 963px;
   padding: 0 60px; }
+
+@media all and (max-width: 600px) {
+  .tweet {
+    padding: 20px; } }
 
 .tweet__text {
   color: #f9f9f9;
@@ -116,6 +125,10 @@ button {
     margin-bottom: 120px;
     padding: 0 90px;
     width: calc(100vw - 120px); } }
+
+@media all and (max-width: 600px) {
+  .tweet__charts {
+    width: 100%; } }
 
 .tweet__charts__section__name {
   color: #2F337C;
@@ -213,6 +226,27 @@ button {
   .left-arrow {
     left: 5px; } }
 
+@media all and (max-width: 600px) {
+  .arrow {
+    background: #2F337C;
+    bottom: 0;
+    fill: white;
+    height: 60px;
+    padding-top: 8px;
+    top: auto;
+    width: 50vw; }
+    .arrow:hover {
+      background: #3d42a1;
+      filter: none; }
+    .arrow:disabled {
+      display: none; }
+  .only-arrow {
+    width: 100%; }
+  .right-arrow {
+    right: 0; }
+  .left-arrow {
+    left: 0; } }
+
 .list-button {
   background: transparent;
   border: none;
@@ -232,6 +266,7 @@ button {
 
 @media all and (max-width: 800px) {
   .list-button {
+    right: 15px;
     top: 22px; } }
 
 .list-view {
