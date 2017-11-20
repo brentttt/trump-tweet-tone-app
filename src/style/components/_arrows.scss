@@ -65,9 +65,12 @@ $arrow-color: $medium-purple;
     top: auto;
     width: 50vw;
 
+    &:hover {
+      filter: none;
+    }
+
     &:active {
       background: lighten($dark-purple, 10%);
-      filter: none;
     }
     &:disabled {
       display: none;
