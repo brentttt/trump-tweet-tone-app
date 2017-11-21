@@ -71,11 +71,6 @@ button {
     padding: 20px;
     padding-bottom: 100px; } }
 
-@media all and (max-width: 600px) {
-  .tweet__charts__section:last-child {
-    background: red;
-    margin-bottom: 180px; } }
-
 .tweet__text {
   color: #f9f9f9;
   margin-bottom: 50px;
@@ -145,9 +140,11 @@ button {
 
 @media all and (max-width: 600px) {
   .tweet__charts {
+    height: auto;
     width: 100%; }
   .tweet__charts__section {
     background: linear-gradient(to top, #f9f9f9, #f9f9f9, rgba(255, 255, 255, 0));
+    height: 250px;
     margin: 0;
     margin-bottom: 120px;
     padding: 0;

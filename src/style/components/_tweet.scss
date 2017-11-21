@@ -13,14 +13,6 @@
 
 }
 
-// fixes bottom chart getting cut off on mobile
-@media all and (max-width: 600px) {
-  .tweet__charts__section:last-child {
-    background: red;
-    margin-bottom: 180px;
-  }
-}
-
 .tweet__text {
   color: $light-grey;
   margin-bottom: 50px;
@@ -110,10 +102,12 @@
 
 @media all and (max-width: 600px) {
   .tweet__charts {
+    height: auto;
     width: 100%;
   }
   .tweet__charts__section {
     background: linear-gradient(to top, $light-grey, $light-grey, rgba(255, 255, 255, 0));
+    height: 250px;
     margin: 0;
     margin-bottom: 120px;
     padding: 0;
