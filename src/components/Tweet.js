@@ -6,7 +6,7 @@ export default class Tweet extends Component {
     if(!this.props.tweet) {
       return (
         <div className="tweet tweet-not-found">
-          <h1>404: Tweet not found!</h1>
+          <i class="fa fa-spinner" aria-hidden="true"></i>
           <a href="/">See Trump's latest tweet</a>
         </div>
       )

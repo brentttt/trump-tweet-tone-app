@@ -16,6 +16,7 @@
 // fixes bottom chart getting cut off on mobile
 @media all and (max-width: 600px) {
   .tweet__charts__section:last-child {
+    background: red;
     margin-bottom: 180px;
   }
 }
@@ -96,6 +97,17 @@
   }
 }
 
+.tweet__charts__section__name {
+  color: $dark-purple;
+  left: 0;
+  mix-blend-mode: multiply;
+  padding: 8px 0;
+  position: absolute;
+  text-align: center;
+  top: -35px;
+  width: 100%;
+}
+
 @media all and (max-width: 600px) {
   .tweet__charts {
     width: 100%;
@@ -107,17 +119,22 @@
     padding: 0;
     width: 100%;
   }
-}
+  .tweet__charts__section__name {
+    bottom: -45px;
+    padding-top: 20px;
+    top: auto;
 
-.tweet__charts__section__name {
-  color: $dark-purple;
-  left: 0;
-  mix-blend-mode: multiply;
-  padding: 8px 0;
-  position: absolute;
-  text-align: center;
-  top: -35px;
-  width: 100%;
+    &:after {
+      content: '';
+      border: 6px solid transparent;
+      border-top-color: $dark-purple;
+      height: 0px;
+      left: calc(50% - 6px);
+      position: absolute;
+      top: 10px;
+      width: 0px;
+    }
+  }
 }
 
 .emotion_tone__wrapper {

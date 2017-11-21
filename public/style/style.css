@@ -73,6 +73,7 @@ button {
 
 @media all and (max-width: 600px) {
   .tweet__charts__section:last-child {
+    background: red;
     margin-bottom: 180px; } }
 
 .tweet__text {
@@ -132,16 +133,6 @@ button {
     padding: 0 90px;
     width: calc(100vw - 120px); } }
 
-@media all and (max-width: 600px) {
-  .tweet__charts {
-    width: 100%; }
-  .tweet__charts__section {
-    background: linear-gradient(to top, #f9f9f9, #f9f9f9, rgba(255, 255, 255, 0));
-    margin: 0;
-    margin-bottom: 120px;
-    padding: 0;
-    width: 100%; } }
-
 .tweet__charts__section__name {
   color: #2F337C;
   left: 0;
@@ -151,6 +142,29 @@ button {
   text-align: center;
   top: -35px;
   width: 100%; }
+
+@media all and (max-width: 600px) {
+  .tweet__charts {
+    width: 100%; }
+  .tweet__charts__section {
+    background: linear-gradient(to top, #f9f9f9, #f9f9f9, rgba(255, 255, 255, 0));
+    margin: 0;
+    margin-bottom: 120px;
+    padding: 0;
+    width: 100%; }
+  .tweet__charts__section__name {
+    bottom: -45px;
+    padding-top: 20px;
+    top: auto; }
+    .tweet__charts__section__name:after {
+      content: '';
+      border: 6px solid transparent;
+      border-top-color: #2F337C;
+      height: 0px;
+      left: calc(50% - 6px);
+      position: absolute;
+      top: 10px;
+      width: 0px; } }
 
 .emotion_tone__wrapper {
   display: flex;
