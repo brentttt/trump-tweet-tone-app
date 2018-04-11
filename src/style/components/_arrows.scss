@@ -15,7 +15,7 @@ $arrow-color: $medium-purple;
   z-index: 100;
 
   &:hover {
-    filter: drop-shadow(0 0 8px orange);
+    fill: $dark-purple;
   }
 
   &:active {

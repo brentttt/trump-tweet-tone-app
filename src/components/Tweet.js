@@ -6,7 +6,7 @@ export default class Tweet extends Component {
     if(!this.props.tweet) {
       return (
         <div className="tweet tweet-not-found">
-          <h1><i class="fa fa-spinner" aria-hidden="true"></i></h1>
+          <h1><i className="fa fa-spinner" aria-hidden="true"></i></h1>
         </div>
       )
     }
@@ -15,12 +15,24 @@ export default class Tweet extends Component {
 
     tweet = tweet.replace(/&amp;/, '&');
 
+    if(tweet.match(/https/)) {
+      tweet = tweet.replace(/(https.+\b)/, '<a href="$&" target="blank">&#128279;</a>');
+      // let link = tweet.match(/(https.+\b)/)[0];
+      // tweet = [
+      //   tweet.replace(link, ''),
+      //   link
+      // ]
+      // console.log(tweet);
+    }
+
+    function createMarkup() { return {__html: tweet}; };
+
     const dt = (datetime.create(this.props.tweet.created_at, 'I:Mp - d n Y')).format();
 
     return(
       <div className="tweet">
       <div className="tweet__text">
-        <span className="tweet__text__content">{tweet}</span>
+        <span className="tweet__text__content" dangerouslySetInnerHTML={createMarkup()}></span>
         <span className="tweet__text__datetime">{dt}</span>
       </div>
         <div className="tweet__charts">

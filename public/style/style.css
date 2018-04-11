@@ -233,7 +233,7 @@ button {
   transition: filter .2s;
   z-index: 100; }
   .arrow:hover {
-    filter: drop-shadow(0 0 8px orange); }
+    fill: #2F337C; }
   .arrow:active {
     fill: #aa76e4; }
   .arrow:disabled {
